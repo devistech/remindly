@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Remindly</title>
+    <meta name="description" content="Privacy Policy for Remindly - A smart reminder app that keeps your data private and secure on your device.">
+    <meta name="theme-color" content="#4F46E5">
+    <meta property="og:title" content="Privacy Policy - Remindly">
+    <meta property="og:description" content="Your data stays on your device. Read how Remindly protects your privacy.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="web/favicon.png" type="image/png">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy - Remindly",
+        "description": "Privacy Policy for Remindly app",
+        "dateModified": "2026-06-01",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Remindly",
+            "email": "devistech123@gmail.com"
+        }
+    }
+    </script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #4F46E5;
+            --primary-light: #6366F1;
+            --primary-dark: #3730A3;
+            --secondary: #7C3AED;
+            --secondary-light: #A78BFA;
+            --accent: #06B6D4;
+            --bg: #F4F4F9;
+            --surface: #FFFFFF;
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --text-tertiary: #9CA3AF;
+            --border: #E5E7EB;
+            --success: #10B981;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.05);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.1);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --radius-lg: 16px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Scroll Progress Bar */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            z-index: 1000;
+            transition: width 0.1s linear;
+            border-radius: 0 2px 2px 0;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 35%, var(--secondary) 70%, var(--accent) 100%);
+            background-size: 300% 300%;
+            animation: gradientShift 12s ease infinite;
+            color: white;
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 80%, rgba(255,255,255,0.12) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 50% at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: var(--bg);
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60'%3E%3Cpath d='M0,30 C300,60 600,0 900,30 C1050,45 1150,20 1200,30 L1200,60 L0,60 Z'/%3E%3C/svg%3E");
+            mask-size: 100% 100%;
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60'%3E%3Cpath d='M0,30 C300,60 600,0 900,30 C1050,45 1150,20 1200,30 L1200,60 L0,60 Z'/%3E%3C/svg%3E");
+            -webkit-mask-size: 100% 100%;
+        }
+
+        .header-content {
+            max-width: 720px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 1.25rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            animation: floatIn 0.8s ease-out;
+        }
+
+        .app-icon img {
+            width: 44px;
+            height: 44px;
+            display: block;
+            border-radius: 10px;
+        }
+
+        @keyframes floatIn {
+            0% { opacity: 0; transform: translateY(-20px) scale(0.9); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+            animation: fadeUp 0.6s ease-out 0.2s both;
+        }
+
+        .header .app-name {
+            font-size: 1.05rem;
+            opacity: 0.9;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.3px;
+            animation: fadeUp 0.6s ease-out 0.1s both;
+        }
+
+        .header .updated {
+            font-size: 0.82rem;
+            opacity: 0.8;
+            background: rgba(255, 255, 255, 0.15);
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            border-radius: 100px;
+            margin-top: 0.5rem;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeUp 0.6s ease-out 0.3s both;
+        }
+
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(12px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Navigation / TOC */
+        .toc-wrapper {
+            max-width: 720px;
+            margin: -2rem auto 0;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .toc {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 1.75rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            transition: box-shadow var(--transition);
+        }
+
+        .toc.is-sticky {
+            box-shadow: var(--shadow-xl);
+        }
+
+        .toc-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-tertiary);
+            font-weight: 700;
+        }
+
+        .toc-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            transition: background var(--transition);
+        }
+
+        .toc-toggle:hover {
+            background: var(--bg);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.25rem;
+        }
+
+        .toc-list li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 500;
+            padding: 0.4rem 0.6rem;
+            display: block;
+            border-radius: 6px;
+            transition: all var(--transition);
+            position: relative;
+        }
+
+        .toc-list li a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 0;
+            background: var(--primary);
+            border-radius: 0 2px 2px 0;
+            transition: height var(--transition);
+        }
+
+        .toc-list li a:hover {
+            color: var(--primary);
+            background: rgba(79, 70, 229, 0.05);
+        }
+
+        .toc-list li a.active {
+            color: var(--primary);
+            background: rgba(79, 70, 229, 0.06);
+        }
+
+        .toc-list li a.active::before {
+            height: 60%;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 720px;
+            margin: 1.5rem auto 0;
+            padding: 0 1rem 3rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 1rem;
+            transition: box-shadow var(--transition);
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(124, 58, 237, 0.05));
+            border-left: 3px solid var(--primary);
+            padding: 1.1rem 1.25rem;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 1rem 0;
+        }
+
+        .highlight p {
+            color: var(--text-primary);
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        ul, ol {
+            padding-left: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 0.35rem;
+            padding-left: 0.25rem;
+            line-height: 1.7;
+        }
+
+        /* Permissions table */
+        .permissions-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .permissions-table thead {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        .permissions-table th {
+            color: white;
+            font-weight: 600;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .permissions-table td {
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .permissions-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .permissions-table tbody tr {
+            transition: background var(--transition);
+        }
+
+        .permissions-table tbody tr:hover {
+            background: rgba(79, 70, 229, 0.03);
+        }
+
+        .permissions-table code {
+            background: var(--bg);
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+            border: 1px solid var(--border);
+        }
+
+        /* Security features */
+        .security-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .security-item {
+            background: var(--bg);
+            padding: 1rem 1.1rem;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            border: 1px solid transparent;
+            transition: all var(--transition);
+        }
+
+        .security-item:hover {
+            border-color: rgba(79, 70, 229, 0.15);
+            background: rgba(79, 70, 229, 0.03);
+            transform: translateY(-1px);
+        }
+
+        .security-item .check {
+            color: var(--success);
+            font-weight: bold;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            margin-top: 0.05rem;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 50%;
+        }
+
+        .security-item span:last-child {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* Contact section */
+        .contact-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 1.75rem;
+            border-radius: var(--radius);
+            text-align: center;
+            margin-top: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .contact-box p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.75rem;
+            position: relative;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 0.65rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all var(--transition);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+        }
+
+        .contact-email:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-email:active {
+            transform: translateY(0);
+        }
+
+        .copy-feedback {
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--text-primary);
+            color: white;
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            opacity: 0;
+            transition: opacity var(--transition);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .copy-feedback.show {
+            opacity: 1;
+        }
+
+        /* Back to top */
+        #back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all var(--transition);
+            z-index: 100;
+        }
+
+        #back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #back-to-top:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+        }
+
+        #back-to-top:active {
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-tertiary);
+            font-size: 0.8rem;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition);
+        }
+
+        .footer a:hover {
+            color: var(--secondary);
+        }
+
+        /* Print styles */
+        @media print {
+            #scroll-progress,
+            #back-to-top,
+            .toc-wrapper {
+                display: none !important;
+            }
+
+            .header {
+                padding: 2rem 1rem;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .header::after {
+                display: none;
+            }
+
+            .section {
+                opacity: 1 !important;
+                transform: none !important;
+                page-break-inside: avoid;
+            }
+
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+
+            .contact-box {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            body {
+                font-size: 11pt;
+                line-height: 1.5;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .header {
+                padding: 2.5rem 1.25rem 2.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .app-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .app-icon img {
+                width: 36px;
+                height: 36px;
+            }
+
+            .toc-list {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 1.5rem;
+                border-radius: var(--radius);
+            }
+
+            .security-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .permissions-table {
+                font-size: 0.82rem;
+            }
+
+            .permissions-table th,
+            .permissions-table td {
+                padding: 0.55rem 0.7rem;
+            }
+
+            .section-header {
+                gap: 0.6rem;
+            }
+
+            .section-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 0.85rem;
+            }
+
+            h2 {
+                font-size: 1.15rem;
+            }
+
+            #back-to-top {
+                bottom: 1.25rem;
+                right: 1.25rem;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .toc-toggle {
+                display: block;
+            }
+
+            .toc-list.collapsed {
+                display: none;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .header h1 {
+                font-size: 1.3rem;
+            }
+
+            .card {
+                padding: 1.25rem;
+            }
+
+            .contact-box {
+                padding: 1.25rem;
+            }
+
+            .contact-email {
+                font-size: 0.85rem;
+                padding: 0.55rem 1.1rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            .section {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="app-icon">
+                <img src="assets/images/logo.png.jpeg" alt="Remindly Logo" width="44" height="44">
+            </div>
+            <div class="app-name">Remindly</div>
+            <h1>Privacy Policy</h1>
+            <span class="updated">&#128197; Last updated: June 1, 2026</span>
+        </div>
+    </header>
+
+    <!-- Table of Contents -->
+    <nav class="toc-wrapper" aria-label="Table of Contents">
+        <div class="toc" id="toc">
+            <div class="toc-header">
+                <span class="toc-title">Contents</span>
+                <button class="toc-toggle" id="toc-toggle" aria-label="Toggle table of contents">&#9660;</button>
+            </div>
+            <ol class="toc-list" id="toc-list">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#information">Information We Collect</a></li>
+                <li><a href="#storage">Data Storage</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#permissions">Permissions</a></li>
+                <li><a href="#security">Data Security</a></li>
+                <li><a href="#deletion">Data Deletion</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#rights">Your Rights</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="card">
+
+            <!-- Introduction -->
+            <section class="section" id="introduction">
+                <div class="section-header">
+                    <div class="section-icon">&#128220;</div>
+                    <h2>Introduction</h2>
+                </div>
+                <p>Remindly ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application Remindly (the "Service").</p>
+                <p>We believe in transparency and want you to understand exactly what data our app accesses, how it is used, and your rights regarding your information.</p>
+            </section>
+
+            <!-- Information We Collect -->
+            <section class="section" id="information">
+                <div class="section-header">
+                    <div class="section-icon">&#128196;</div>
+                    <h2>Information We Collect</h2>
+                </div>
+
+                <h3>Information You Provide</h3>
+                <p>Remindly stores all your reminder data <strong>locally on your device</strong> using Hive (a local database). This includes:</p>
+                <ul>
+                    <li>Reminder titles and descriptions</li>
+                    <li>Category selections</li>
+                    <li>Date and time information</li>
+                    <li>Repeat settings and notification preferences</li>
+                    <li>Language preference</li>
+                </ul>
+
+                <div class="highlight">
+                    <p>We do NOT collect, transmit, or store any of your personal data on our servers. All data remains entirely on your device.</p>
+                </div>
+
+                <h3>Information Collected by Third Parties</h3>
+                <p>Our app uses Google AdMob to display advertisements. Google AdMob may collect and use data as described in <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--primary);">Google's Privacy Policy</a>. This may include:</p>
+                <ul>
+                    <li>Device identifiers (advertising ID)</li>
+                    <li>Device type and operating system version</li>
+                    <li>IP address</li>
+                    <li>Ad interaction data</li>
+                </ul>
+                <p>You can opt out of personalized advertising by going to <strong>Settings &gt; Google &gt; Ads</strong> on your Android device and tapping "Opt out of Ads Personalization".</p>
+            </section>
+
+            <!-- Data Storage -->
+            <section class="section" id="storage">
+                <div class="section-header">
+                    <div class="section-icon">&#128190;</div>
+                    <h2>Data Storage</h2>
+                </div>
+                <p>All reminder data is stored locally on your device using Hive, a lightweight and fast database built for Flutter. The data stored includes:</p>
+                <ul>
+                    <li>Reminder titles and descriptions</li>
+                    <li>Scheduled dates and times</li>
+                    <li>Category assignments</li>
+                    <li>Language preferences</li>
+                    <li>App settings</li>
+                </ul>
+                <div class="highlight">
+                    <p>This data is never shared with third parties and never leaves your device.</p>
+                </div>
+            </section>
+
+            <!-- Notifications -->
+            <section class="section" id="notifications">
+                <div class="section-header">
+                    <div class="section-icon">&#128276;</div>
+                    <h2>Notifications</h2>
+                </div>
+                <p>Remindly uses local notifications to remind you about your scheduled tasks. These notifications are generated entirely on your device. No notification data is sent to or received from external servers.</p>
+            </section>
+
+            <!-- Advertising -->
+            <section class="section" id="advertising">
+                <div class="section-header">
+                    <div class="section-icon">&#128250;</div>
+                    <h2>Advertising</h2>
+                </div>
+                <p>Remindly displays advertisements through Google AdMob. AdMob may collect and use data for advertising purposes in accordance with Google's privacy policy.</p>
+                <p>You can learn more about Google's data practices at: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--primary);">https://policies.google.com/privacy</a></p>
+                <p>To opt out of personalized ads, navigate to your device's <strong>Settings &gt; Google &gt; Ads</strong> and disable ad personalization.</p>
+            </section>
+
+            <!-- Permissions -->
+            <section class="section" id="permissions">
+                <div class="section-header">
+                    <div class="section-icon">&#128272;</div>
+                    <h2>Permissions We Use</h2>
+                </div>
+                <p>Remindly requests only the permissions necessary for its core functionality:</p>
+                <table class="permissions-table">
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>INTERNET</code></td>
+                            <td>Loading advertisements via Google AdMob</td>
+                        </tr>
+                        <tr>
+                            <td><code>POST_NOTIFICATIONS</code></td>
+                            <td>Sending reminder notifications (Android 13+)</td>
+                        </tr>
+                        <tr>
+                            <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                            <td>Scheduling precise reminder notifications</td>
+                        </tr>
+                        <tr>
+                            <td><code>USE_EXACT_ALARM</code></td>
+                            <td>Exact alarm scheduling (Android 12+)</td>
+                        </tr>
+                        <tr>
+                            <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                            <td>Rescheduling reminders after device restart</td>
+                        </tr>
+                        <tr>
+                            <td><code>VIBRATE</code></td>
+                            <td>Notification vibration</td>
+                        </tr>
+                        <tr>
+                            <td><code>WAKE_LOCK</code></td>
+                            <td>Ensuring notifications are delivered on time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Data Security -->
+            <section class="section" id="security">
+                <div class="section-header">
+                    <div class="section-icon">&#128737;</div>
+                    <h2>Data Security</h2>
+                </div>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <span class="check">&#10003;</span>
+                        <span>All data stored locally using Hive, an encrypted local database</span>
+                    </div>
+                    <div class="security-item">
+                        <span class="check">&#10003;</span>
+                        <span>No data transmitted to external servers</span>
+                    </div>
+                    <div class="security-item">
+                        <span class="check">&#10003;</span>
+                        <span>No analytics or tracking services</span>
+                    </div>
+                    <div class="security-item">
+                        <span class="check">&#10003;</span>
+                        <span>We do not sell, trade, or transfer your information</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Deletion -->
+            <section class="section" id="deletion">
+                <div class="section-header">
+                    <div class="section-icon">&#128465;</div>
+                    <h2>Data Deletion</h2>
+                </div>
+                <p>You have full control over your data. You can delete all your data at any time by going to <strong>Settings &gt; Clear All Data</strong> within the app. This will permanently remove all reminders and settings from your device.</p>
+            </section>
+
+            <!-- Children's Privacy -->
+            <section class="section" id="children">
+                <div class="section-header">
+                    <div class="section-icon">&#128118;</div>
+                    <h2>Children's Privacy</h2>
+                </div>
+                <p>Remindly is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us.</p>
+            </section>
+
+            <!-- Your Rights -->
+            <section class="section" id="rights">
+                <div class="section-header">
+                    <div class="section-icon">&#9878;</div>
+                    <h2>Your Rights</h2>
+                </div>
+                <p>Since we do not collect or store any personal data on our servers, there is no personal data for us to access, modify, or delete. All your reminder data is stored locally on your device and can be managed entirely through the app's interface.</p>
+                <p>You can delete all your data at any time by using the <strong>"Clear All Data"</strong> option in the app's Settings.</p>
+            </section>
+
+            <!-- Changes -->
+            <section class="section" id="changes">
+                <div class="section-header">
+                    <div class="section-icon">&#128221;</div>
+                    <h2>Changes to This Policy</h2>
+                </div>
+                <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this policy periodically.</p>
+                <p>Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </section>
+
+            <!-- Contact -->
+            <section class="section" id="contact">
+                <div class="section-header">
+                    <div class="section-icon">&#128231;</div>
+                    <h2>Contact Us</h2>
+                </div>
+                <p>If you have any questions or concerns about this Privacy Policy, please don't hesitate to reach out.</p>
+                <div class="contact-box">
+                    <p>We'd love to hear from you</p>
+                    <a href="mailto:devistech123@gmail.com" class="contact-email" id="contact-email">
+                        &#9993;&nbsp; devistech123@gmail.com
+                        <span class="copy-feedback" id="copy-feedback">Copied!</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 <a href="#">Remindly</a>. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // ------ Scroll Progress Bar ------
+            var progressBar = document.getElementById('scroll-progress');
+            function updateProgress() {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                progressBar.style.width = scrolled + '%';
+            }
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            window.addEventListener('resize', updateProgress, { passive: true });
+
+            // ------ Scroll Spy (TOC Active State) ------
+            var tocLinks = document.querySelectorAll('.toc-list li a');
+            var sections = [];
+            tocLinks.forEach(function(link) {
+                var href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    var section = document.getElementById(href.substring(1));
+                    if (section) sections.push({ el: section, link: link });
+                }
+            });
+
+            function updateActiveSection() {
+                var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+                var offset = 120;
+                var currentId = null;
+
+                for (var i = 0; i < sections.length; i++) {
+                    var section = sections[i].el;
+                    if (section.offsetTop - offset <= scrollPos) {
+                        currentId = section.getAttribute('id');
+                    }
+                }
+
+                tocLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + currentId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveSection, { passive: true });
+            window.addEventListener('resize', updateActiveSection, { passive: true });
+
+            // ------ Fade-in Animations (Intersection Observer) ------
+            var sectionEls = document.querySelectorAll('.section');
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+                sectionEls.forEach(function(section) {
+                    observer.observe(section);
+                });
+
+                // Check already-visible sections immediately
+                setTimeout(function() {
+                    sectionEls.forEach(function(section) {
+                        var rect = section.getBoundingClientRect();
+                        if (rect.top < window.innerHeight - 60) {
+                            section.classList.add('visible');
+                        }
+                    });
+                }, 100);
+            } else {
+                sectionEls.forEach(function(section) {
+                    section.classList.add('visible');
+                });
+            }
+
+            // ------ Back to Top Button ------
+            var backToTop = document.getElementById('back-to-top');
+            window.addEventListener('scroll', function() {
+                if ((window.pageYOffset || document.documentElement.scrollTop) > 400) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ------ TOC Collapse on Mobile ------
+            var tocToggle = document.getElementById('toc-toggle');
+            var tocList = document.getElementById('toc-list');
+            if (tocToggle && tocList) {
+                tocToggle.addEventListener('click', function() {
+                    tocList.classList.toggle('collapsed');
+                    tocToggle.textContent = tocList.classList.contains('collapsed') ? '\u25B6' : '\u25BC';
+                });
+            }
+
+            // ------ Copy Email on Click ------
+            var emailLink = document.getElementById('contact-email');
+            var copyFeedback = document.getElementById('copy-feedback');
+            if (emailLink && copyFeedback && navigator.clipboard) {
+                emailLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navigator.clipboard.writeText('devistech123@gmail.com').then(function() {
+                        copyFeedback.classList.add('show');
+                        setTimeout(function() {
+                            copyFeedback.classList.remove('show');
+                        }, 2000);
+                    })['catch'](function() {
+                        window.location.href = 'mailto:devistech123@gmail.com';
+                    });
+                });
+            }
+
+            // ------ TOC Sticky Shadow ------
+            var toc = document.getElementById('toc');
+            var tocObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.intersectionRatio < 1) {
+                        toc.classList.add('is-sticky');
+                    } else {
+                        toc.classList.remove('is-sticky');
+                    }
+                });
+            }, { threshold: [0, 1] });
+            if (toc) tocObserver.observe(toc);
+
+        })();
+    </script>
+
+</body>
+</html>
